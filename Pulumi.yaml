@@ -1,0 +1,4 @@
+name: parking-lot-management-system
+runtime: nodejs
+description: >-
+  Serverless Parking Lot Management System with AWS

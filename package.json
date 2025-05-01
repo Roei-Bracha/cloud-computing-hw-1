@@ -1,0 +1,24 @@
+{
+  "name": "hw1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "up": "pulumi up",
+    "destroy": "pulumi destroy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pulumi/aws": "^6.78.0",
+    "@pulumi/pulumi": "^3.167.0",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1692.0",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.149"
+  }
+}
