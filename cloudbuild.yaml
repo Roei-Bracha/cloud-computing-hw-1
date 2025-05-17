@@ -1,0 +1,14 @@
+steps:
+  # Build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/${_SERVICE_NAME}:latest', './functions/${_SOURCE_DIR}']
+  # Push the container image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/${_SERVICE_NAME}:latest']
+
+images:
+  - 'gcr.io/$PROJECT_ID/${_SERVICE_NAME}:latest'
+
+substitutions:
+  _SERVICE_NAME: service-name # default value
+  _SOURCE_DIR: src # default value 

@@ -1,4 +1,3 @@
-name: parking-lot-management-system
+name: parking-lot-system
 runtime: nodejs
-description: >-
-  Serverless Parking Lot Management System with AWS
+description: "Serverless parking lot management on GCP"
